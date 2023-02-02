@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 19, 2023 at 02:56 AM
+-- Generation Time: Feb 02, 2023 at 03:15 AM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -39,6 +39,36 @@ INSERT INTO `benefits` (`id_benefit`, `id_treatment`, `description`, `active`, `
 (4, 1, 'Previene la halitosis', 1, NULL),
 (5, 1, 'Previene enfermedades de encías y hueso', 1, NULL),
 (6, 1, 'Previene enfermedades sistémicas', 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_form`
+--
+
+CREATE TABLE `contact_form` (
+  `id_contactForm` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `seen` int(11) NOT NULL DEFAULT '0',
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `contact_form`
+--
+
+INSERT INTO `contact_form` (`id_contactForm`, `name`, `phone`, `message`, `seen`, `date`) VALUES
+(1, 'Juan', '5534080960', 'Lorem', 0, '2023-02-02 02:48:03'),
+(2, 'Juan 2', '5534080960', 'Lorem 2', 0, '2023-02-02 02:49:47'),
+(3, 'Omar', '5512854958', 'Omar', 0, '2023-02-02 02:54:39'),
+(4, 'Juan', '5534080960', 'lorem', 0, '2023-02-02 03:07:51'),
+(5, 'Juan 5', '5534080960', 'lorem 5', 0, '2023-02-02 03:08:29'),
+(6, 'Juan 6 ', '5534080960', 'Lorem 6', 0, '2023-02-02 03:08:51'),
+(7, 'Perez', '5534080960', 'Lorem 7', 0, '2023-02-02 03:09:15'),
+(8, 'Peres', '5598765432', 'Lorem 8', 0, '2023-02-02 03:10:08'),
+(9, 'Perez', '5534080960', 'Lorem 9', 0, '2023-02-02 03:14:18');
 
 -- --------------------------------------------------------
 
@@ -83,6 +113,12 @@ ALTER TABLE `benefits`
   ADD KEY `id_treatment` (`id_treatment`);
 
 --
+-- Indexes for table `contact_form`
+--
+ALTER TABLE `contact_form`
+  ADD PRIMARY KEY (`id_contactForm`);
+
+--
 -- Indexes for table `treatments`
 --
 ALTER TABLE `treatments`
@@ -97,6 +133,12 @@ ALTER TABLE `treatments`
 --
 ALTER TABLE `benefits`
   MODIFY `id_benefit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `contact_form`
+--
+ALTER TABLE `contact_form`
+  MODIFY `id_contactForm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `treatments`
