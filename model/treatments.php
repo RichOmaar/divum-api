@@ -11,13 +11,13 @@ class Treatments
         
         switch ($order) {
             case 'asc':
-                $sql = "SELECT * FROM treatments ORDER BY title ASC";
+                $sql = "SELECT * FROM treatments WHERE status = 1 ORDER BY title ASC";
                 break;
             case 'desc':
-                $sql = "SELECT * FROM treatments ORDER BY title DESC";
+                $sql = "SELECT * FROM treatments WHERE status = 1 ORDER BY title DESC";
                 break;
             default:
-                $sql = "SELECT * FROM treatments";
+                $sql = "SELECT * FROM treatments WHERE status = 1";
                 break;
         }
 
