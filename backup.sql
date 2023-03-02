@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 24, 2023 at 04:01 AM
+-- Generation Time: Mar 02, 2023 at 07:16 AM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -71,6 +71,31 @@ INSERT INTO `benefits` (`id_benefit`, `id_treatment`, `description`, `active`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `id_category` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id_category`, `name`, `status`) VALUES
+(1, 'Odontología', 1),
+(2, 'Pediatría', 1),
+(3, 'Ortodoncia', 1),
+(4, 'Protesis', 1),
+(5, 'Alineadores', 1),
+(6, 'Implantes', 1),
+(7, 'Estética', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `contact_form`
 --
 
@@ -97,6 +122,62 @@ INSERT INTO `contact_form` (`id_contactForm`, `name`, `phone`, `message`, `seen`
 (7, 'Perez', '5534080960', 'Lorem 7', 0, '2023-02-02 03:09:15'),
 (8, 'Peres', '5598765432', 'Lorem 8', 0, '2023-02-02 03:10:08'),
 (9, 'Perez', '5534080960', 'Lorem 9', 0, '2023-02-02 03:14:18');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id_post` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `foreword` text,
+  `content` text NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `status` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id_post`, `title`, `foreword`, `content`, `image`, `author`, `date`, `status`) VALUES
+(1, 'Odontopediatría en clinica DIVUM', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><blockquote>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</blockquote><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><ul><li>Uno</li><li>DOS</li><li>TRES</li><li><a href=\"facebook.com\" rel=\"noopener noreferrer\" target=\"_blank\">CUATRO</a></li></ul><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdk<strong>lajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alsk</strong>jdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd, alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p>', 'odontopediatraenclinicadivum.png', 'DIVUM', '2023-03-02 07:01:37', 1),
+(2, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><blockquote>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</blockquote><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><ul><li>Uno</li><li>DOS</li><li>TRES</li><li><a href=\"facebook.com\" rel=\"noopener noreferrer\" target=\"_blank\">CUATRO</a></li></ul><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdk<strong>lajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alsk</strong>jdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd, alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:03:34', 1),
+(3, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:05:52', 1),
+(4, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:06:03', 1),
+(5, 'Noticia ultima', 'Prefacio ultimo', '<h1>HOLA MUNDO</h1><p><br></p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p><br></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJ<s><u>KS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKD</u></s>JKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><br></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p>', 'noticiaultima.jpg', 'OMAR CAMACHO', '2023-03-02 07:10:25', 1),
+(6, 'Noticia ultima', 'Prefacio ultimo', '<h1>HOLA MUNDO</h1><p><br></p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p><br></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJ<s><u>KS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKD</u></s>JKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><br></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p>', 'noticiaultima.jpg', 'OMAR CAMACHO', '2023-03-02 07:10:39', 1),
+(7, 'Ultima noticia', 'Prefacio de la noticia', '<h1>Hola mundo</h1>', 'ultimanoticia.png', 'OMAR CAMACHo', '2023-03-02 07:15:13', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_category`
+--
+
+CREATE TABLE `post_category` (
+  `id_post` int(11) DEFAULT NULL,
+  `id_category` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `post_category`
+--
+
+INSERT INTO `post_category` (`id_post`, `id_category`) VALUES
+(1, 3),
+(1, 5),
+(1, 7),
+(2, 6),
+(4, 7),
+(6, 1),
+(6, 2),
+(6, 7),
+(7, 4);
 
 -- --------------------------------------------------------
 
@@ -142,10 +223,29 @@ ALTER TABLE `benefits`
   ADD KEY `id_treatment` (`id_treatment`);
 
 --
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id_category`);
+
+--
 -- Indexes for table `contact_form`
 --
 ALTER TABLE `contact_form`
   ADD PRIMARY KEY (`id_contactForm`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id_post`);
+
+--
+-- Indexes for table `post_category`
+--
+ALTER TABLE `post_category`
+  ADD KEY `id_post` (`id_post`),
+  ADD KEY `id_category` (`id_category`);
 
 --
 -- Indexes for table `treatments`
@@ -164,10 +264,22 @@ ALTER TABLE `benefits`
   MODIFY `id_benefit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `contact_form`
 --
 ALTER TABLE `contact_form`
   MODIFY `id_contactForm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `treatments`
@@ -184,3 +296,10 @@ ALTER TABLE `treatments`
 --
 ALTER TABLE `benefits`
   ADD CONSTRAINT `benefits_ibfk_1` FOREIGN KEY (`id_treatment`) REFERENCES `treatments` (`id_treatment`);
+
+--
+-- Constraints for table `post_category`
+--
+ALTER TABLE `post_category`
+  ADD CONSTRAINT `post_category_ibfk_1` FOREIGN KEY (`id_post`) REFERENCES `posts` (`id_post`),
+  ADD CONSTRAINT `post_category_ibfk_2` FOREIGN KEY (`id_category`) REFERENCES `categories` (`id_category`);
