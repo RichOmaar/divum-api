@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 02, 2023 at 07:16 AM
+-- Generation Time: Mar 03, 2023 at 06:31 AM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -91,7 +91,8 @@ INSERT INTO `categories` (`id_category`, `name`, `status`) VALUES
 (4, 'Protesis', 1),
 (5, 'Alineadores', 1),
 (6, 'Implantes', 1),
-(7, 'Estética', 1);
+(7, 'Estética', 1),
+(8, 'Endodoncia', 1);
 
 -- --------------------------------------------------------
 
@@ -135,6 +136,7 @@ CREATE TABLE `posts` (
   `foreword` text,
   `content` text NOT NULL,
   `image` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `status` int(11) NOT NULL DEFAULT '1'
@@ -144,14 +146,9 @@ CREATE TABLE `posts` (
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`id_post`, `title`, `foreword`, `content`, `image`, `author`, `date`, `status`) VALUES
-(1, 'Odontopediatría en clinica DIVUM', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><blockquote>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</blockquote><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><ul><li>Uno</li><li>DOS</li><li>TRES</li><li><a href=\"facebook.com\" rel=\"noopener noreferrer\" target=\"_blank\">CUATRO</a></li></ul><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdk<strong>lajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alsk</strong>jdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd, alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p>', 'odontopediatraenclinicadivum.png', 'DIVUM', '2023-03-02 07:01:37', 1),
-(2, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><blockquote>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</blockquote><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><ul><li>Uno</li><li>DOS</li><li>TRES</li><li><a href=\"facebook.com\" rel=\"noopener noreferrer\" target=\"_blank\">CUATRO</a></li></ul><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdk<strong>lajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd. alkdjkljdkljaskldjkaljdklajd aksdjklasjd alsk</strong>jdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd, alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd.</p><p><br></p><p>alkdjkljdkljaskldjkaljdklajd aksdjklasjd alskjdklsjdkljsdklsjdklajs dlksjd skdj lk jkljdlkadjasjd sldjkajdklsjdlkj lksdjlksjdkl jsd</p>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:03:34', 1),
-(3, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:05:52', 1),
-(4, 'Odontopediatría en clinica DIVUM Segundo post', 'Ha ocurrido un error al publicar la noticia, intentalo de nuevo.\r\nHa ocurrido un error al publicar la noticia, intentalo de nuevo. Ha ocurrido un error al publicar la noticia, intentalo de nuevo', '<h1>Hola mundo</h1>', 'odontopediatraenclinicadivumsegundopost.png', 'DIVUM', '2023-03-02 07:06:03', 1),
-(5, 'Noticia ultima', 'Prefacio ultimo', '<h1>HOLA MUNDO</h1><p><br></p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p><br></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJ<s><u>KS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKD</u></s>JKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><br></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p>', 'noticiaultima.jpg', 'OMAR CAMACHO', '2023-03-02 07:10:25', 1),
-(6, 'Noticia ultima', 'Prefacio ultimo', '<h1>HOLA MUNDO</h1><p><br></p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</p><p><br></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJ<s><u>KS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKD</u></s>JKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><strong>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</strong></p><p><br></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p><p><em><u>OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD.OASJDLKJDKLJKS DALKSDJKLSJD LSKDJKSJDKLSJDKL KSLJDK LJKD KLJSDLKJ KLJSD</u></em></p>', 'noticiaultima.jpg', 'OMAR CAMACHO', '2023-03-02 07:10:39', 1),
-(7, 'Ultima noticia', 'Prefacio de la noticia', '<h1>Hola mundo</h1>', 'ultimanoticia.png', 'OMAR CAMACHo', '2023-03-02 07:15:13', 1);
+INSERT INTO `posts` (`id_post`, `title`, `foreword`, `content`, `image`, `url`, `author`, `date`, `status`) VALUES
+(8, 'Endodoncia: Qué es y cuándo se necesita', 'La endodoncia es una rama de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes. Es comúnmente conocida como terapia de conductos radiculares, y se utiliza para salvar un diente que está infectado o dañado. En esta publicación del blog, discutiremos qué es la endodoncia y cuándo se puede necesitar.', '<h2>¿Qué es la endodoncia?</h2><p>La <strong>endodoncia</strong> es la rama de la odontología que se ocupa de la pulpa dental y los tejidos que rodean la raíz del diente. La pulpa dental es el tejido blando que se encuentra dentro del diente y que contiene nervios, vasos sanguíneos y tejido conectivo. Cuando la pulpa se infecta o inflama, puede causar dolor y dañar el diente. El tratamiento <strong>endodóntico</strong> implica la eliminación de la pulpa dañada o infectada, la limpieza y el conformado de los conductos radiculares, y el sellado del diente para evitar una infección adicional.</p><p><br></p><h2>¿Cuándo se puede necesitar un tratamiento endodóntico?</h2><p>El tratamiento <strong>endodóntico</strong> se necesita cuando la pulpa dental se infecta o inflama. Esto puede ser causado por una variedad de factores, incluyendo la caries dental, traumatismo en el diente, o procedimientos dentales repetidos en el mismo diente. Los síntomas de una pulpa infectada o inflamada incluyen dolor, sensibilidad al calor o al frío, hinchazón y un mal sabor en la boca. Si experimenta alguno de estos síntomas, es importante que consulte a su dentista lo antes posible.</p><p><br></p><h2>Proceso de tratamiento endodóntico:</h2><ul><li>La <strong>endodoncia</strong> es una rama especializada de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes.</li><li>Si experimenta síntomas de una pulpa infectada o inflamada, es importante que consulte a su dentista lo antes posible.</li><li>El tratamiento <strong>endodóntico</strong> puede salvar un diente dañado o infectado y evitar la necesidad de extracción.</li><li>Con el cuidado adecuado, un diente tratado puede durar toda la vida.</li></ul><p><br></p>', 'endodonciaquesycundosenecesita.jpg', 'endodoncia-que-es-y-cuando-se-necesita', 'Omar Camacho by GPT', '2023-03-03 02:28:55', 1),
+(9, 'Caries dental: Qué es y cómo prevenirla', 'La caries dental es uno de los problemas dentales más comunes en todo el mundo. Es una enfermedad infecciosa y destructiva que afecta a los dientes y puede causar dolor, sensibilidad y problemas de masticación. En esta publicación del blog, hablaremos sobre qué es la caries dental, qué la causa y cómo se puede prevenir.', '<h2>¿Qué es la caries dental?</h2><p>La caries dental es una enfermedad que afecta a los dientes y que se produce cuando las bacterias en la boca producen ácidos que desmineralizan el esmalte dental. El esmalte es la capa protectora y dura que cubre los dientes, y cuando se desmineraliza, los dientes pueden desarrollar agujeros o cavidades. Si no se trata, la caries dental puede avanzar y afectar a la pulpa dental, lo que puede causar dolor y eventualmente la pérdida del diente.</p><p><br></p><h2>¿Qué causa la caries dental?</h2><p>La caries dental es causada por la combinación de bacterias en la boca, alimentos azucarados y una higiene oral deficiente. Las bacterias en la boca forman una película pegajosa llamada placa dental, que se adhiere a los dientes y produce ácidos que pueden desmineralizar el esmalte. Los alimentos azucarados son especialmente peligrosos, ya que las bacterias utilizan los azúcares para producir más ácidos. Una higiene oral deficiente, como no cepillarse los dientes con regularidad o no usar hilo dental, también puede contribuir a la caries dental.</p><p><br></p><h2>¿Cómo se puede prevenir la caries dental?</h2><p>La buena noticia es que la caries dental es una enfermedad prevenible. Aquí hay algunos consejos para prevenir la caries dental:</p><ol><li>Cepíllese los dientes dos veces al día con pasta dental que contenga flúor.</li><li>Use hilo dental diariamente para eliminar la placa dental y los restos de alimentos entre los dientes.</li><li>Limite los alimentos y bebidas azucaradas y pegajosas, como los refrescos y los caramelos.</li><li>Aumente su consumo de alimentos ricos en calcio, como los productos lácteos.</li><li>Visite a su dentista regularmente para revisiones y limpiezas dentales.</li></ol><p><br></p><h2>Conclusión</h2><p>La caries dental es una enfermedad común que puede causar dolor, sensibilidad y problemas de masticación. Se puede prevenir con una buena higiene oral, una dieta saludable y visitas regulares al dentista. Si sospecha que tiene una caries dental, es importante que consulte a su dentista lo antes posible para recibir tratamiento.</p>', 'cariesdentalquesycmoprevenirla.jpg', 'caries-dental-que-es-y-como-prevenirla', 'Omar Camacho by GPT', '2023-03-03 02:29:27', 1);
 
 -- --------------------------------------------------------
 
@@ -169,15 +166,9 @@ CREATE TABLE `post_category` (
 --
 
 INSERT INTO `post_category` (`id_post`, `id_category`) VALUES
-(1, 3),
-(1, 5),
-(1, 7),
-(2, 6),
-(4, 7),
-(6, 1),
-(6, 2),
-(6, 7),
-(7, 4);
+(9, 1),
+(8, 1),
+(8, 8);
 
 -- --------------------------------------------------------
 
@@ -267,7 +258,7 @@ ALTER TABLE `benefits`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `contact_form`
@@ -279,7 +270,7 @@ ALTER TABLE `contact_form`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `treatments`
