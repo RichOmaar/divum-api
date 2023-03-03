@@ -50,4 +50,45 @@ class Posts {
 
         return ($stmt->rowCount() > 0) ? true : false;
     }
+
+    public static function mdlGetSliderPosts() {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC LIMIT 3";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
+    }
+    
+    public static function mdlGetAllPosts() {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
+    }
+
+    public static function mdlGetPost($url) {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT * FROM posts WHERE url = :url";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":url", $url);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetch(PDO::FETCH_ASSOC) : false;
+    }
 }
