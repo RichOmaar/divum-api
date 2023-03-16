@@ -91,4 +91,32 @@ class Posts {
 
         return ($stmt->rowCount() > 0) ? $stmt->fetch(PDO::FETCH_ASSOC) : false;
     }
+
+    public static function mdlGetRandomPosts() {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT posts.id_post, posts.title, posts.url FROM posts ORDER BY RAND() LIMIT 10";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
+    }
+
+    public static function mdlGetPostCategories($id_post) {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT id_category FROM post_category WHERE id_post = :id_post";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":id_post", $id_post);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetch(PDO::FETCH_ASSOC) : false;
+    }
 }
