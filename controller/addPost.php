@@ -5,11 +5,12 @@ require '../model/posts.php';
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: *');
 
-if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categories']) && isset($_POST['content']) && isset($_POST['author'])) {
+if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categories']) && isset($_POST['content']) && isset($_POST['url']) && isset($_POST['author'])) {
     $title = $_POST['title'];
     $foreword = $_POST['foreword'];
     $content = $_POST['content'];
     $author = $_POST['author'];
+    $url = $_POST['url'];
     $categories = $_POST['categories'];
 
     if(isset($_FILES['image']['name'])) {
@@ -23,7 +24,7 @@ if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categori
 
         if(move_uploaded_file($_FILES['image']['tmp_name'], $imagePath)) {
 
-            $post = Posts::mdlAddPost($title, $foreword, $content, $imageTitle, $author);
+            $post = Posts::mdlAddPost($title, $foreword, $content, $imageTitle, $url, $author);
 
             if(!$post) {
                 echo '{"response":"error","message":"Post not added"}';

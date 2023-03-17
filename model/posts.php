@@ -16,11 +16,11 @@ class Posts {
         return ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
     }
 
-    public static function mdlAddPost($title, $foreword, $content, $image, $author) {
+    public static function mdlAddPost($title, $foreword, $content, $image, $url, $author) {
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql = "INSERT INTO posts (title, foreword, content, image, author) VALUES (:title, :foreword, :content, :image, :author)";
+        $sql = "INSERT INTO posts (title, foreword, content, image, url, author) VALUES (:title, :foreword, :content, :image, :url, :author)";
 
         $stmt = $db->prepare($sql);
 
@@ -28,6 +28,7 @@ class Posts {
         $stmt->bindParam(":foreword", $foreword);
         $stmt->bindParam(":content", $content);
         $stmt->bindParam(":image", $image);
+        $stmt->bindParam(":url", $url);
         $stmt->bindParam(":author", $author);
 
         $stmt->execute();
