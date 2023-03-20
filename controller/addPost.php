@@ -17,7 +17,7 @@ if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categori
         $image = $_FILES['image']['name'];
         $imageTitle = str_replace(' ', '_', $title);
         $imageTitle = strtolower($imageTitle);
-        $imageTitle = preg_replace('/[^A-Za-z0-9\-]/', '', $imageTitle);
+        $imageTitle = preg_replace('/[^A-Za-z0-9\-]/', '-', $imageTitle);
         $imageTitle = $imageTitle.'.'.pathinfo($image, PATHINFO_EXTENSION);
 
         $imagePath = '../assets/posts/'.$imageTitle;
