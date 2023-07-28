@@ -1,3 +1,3 @@
 <?php
 
-echo '<h1>API de DIVUM</h1>';
+echo '<h1>DIVUM API</h1>';
