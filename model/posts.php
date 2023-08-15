@@ -3,13 +3,15 @@
 require_once 'connection.php';
 
 class Posts {
-    public static function mdlGetCategories() {
+    public static function mdlGetCategories($area) {
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql = "SELECT * FROM categories";
+        $sql = "SELECT * FROM categories WHERE area = :area";
 
         $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":area", $area);
 
         $stmt->execute();
 
@@ -52,26 +54,30 @@ class Posts {
         return ($stmt->rowCount() > 0) ? true : false;
     }
 
-    public static function mdlGetSliderPosts() {
+    public static function mdlGetSliderPosts($area) {
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC LIMIT 3";
-
+        // $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC LIMIT 3";
+        $sql = "SELECT DISTINCT posts.* FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category=categories.id_category WHERE categories.area = :area AND posts.status = 1 ORDER BY posts.id_post DESC LIMIT 3";
         $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":area", $area);
 
         $stmt->execute();
 
         return ($stmt->rowCount() > 0) ? $stmt->fetchAll(PDO::FETCH_ASSOC) : false;
     }
     
-    public static function mdlGetAllPosts() {
+    public static function mdlGetAllPosts($area) {
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC";
+        $sql = "SELECT DISTINCT posts.* FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category=categories.id_category WHERE categories.area = :area AND posts.status = 1 ORDER BY posts.id_post DESC";
 
         $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":area", $area);
 
         $stmt->execute();
 

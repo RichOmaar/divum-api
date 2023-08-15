@@ -2,14 +2,14 @@
 
 class Connection {
     public function get_connection() { 
-        $user = "legendar_divum";
-        $pass = "PINTOhome.l";
-        $host = "127.0.0.1";
-        $db = "legendar_divum";
-        // $user = "root";
-        // $pass = "root";
-        // $host = "localhost";
-        // $db = "divum";
+        // $user = "legendar_divum";
+        // $pass = "PINTOhome.1";
+        // $host = "127.0.0.1";
+        // $db = "legendar_divum";
+        $user = "root";
+        $pass = "root";
+        $host = "localhost";
+        $db = "divum";
         $connection = new PDO(
             "mysql:host={$host}; 
             dbname={$db};", 

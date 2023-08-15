@@ -5,12 +5,19 @@ require '../model/posts.php';
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: *');
 
-$categories = Posts::mdlGetCategories();
+if(isset($_POST['area'])) {
+    $area = $_POST['area'];
 
-if(!$categories) {
-    echo '{"response":"error","message":"No categories found"}';
-    return;
+    $categories = Posts::mdlGetCategories($area);
+    
+    if(!$categories) {
+        echo '{"response":"error","message":"No categories found"}';
+        return;
+    } else {
+        echo '{"response":"success","categories": '.json_encode($categories).'}';
+        return;
+    }
 } else {
-    echo '{"response":"success","categories": '.json_encode($categories).'}';
+    echo '{"response":"error","message":"No area specified"}';
     return;
 }
