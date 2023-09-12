@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 15-08-2023 a las 17:36:58
+-- Tiempo de generación: 07-09-2023 a las 22:41:43
 -- Versión del servidor: 5.7.39
 -- Versión de PHP: 8.2.0
 
@@ -161,6 +161,7 @@ CREATE TABLE `contact_form` (
   `id_contactForm` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `message` varchar(255) NOT NULL,
   `seen` int(11) NOT NULL DEFAULT '0',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -170,16 +171,19 @@ CREATE TABLE `contact_form` (
 -- Volcado de datos para la tabla `contact_form`
 --
 
-INSERT INTO `contact_form` (`id_contactForm`, `name`, `phone`, `message`, `seen`, `date`) VALUES
-(1, 'Juan', '5534080960', 'Lorem', 0, '2023-02-02 02:48:03'),
-(2, 'Juan 2', '5534080960', 'Lorem 2', 0, '2023-02-02 02:49:47'),
-(3, 'Omar', '5512854958', 'Omar', 0, '2023-02-02 02:54:39'),
-(4, 'Juan', '5534080960', 'lorem', 0, '2023-02-02 03:07:51'),
-(5, 'Juan 5', '5534080960', 'lorem 5', 0, '2023-02-02 03:08:29'),
-(6, 'Juan 6 ', '5534080960', 'Lorem 6', 0, '2023-02-02 03:08:51'),
-(7, 'Perez', '5534080960', 'Lorem 7', 0, '2023-02-02 03:09:15'),
-(8, 'Peres', '5598765432', 'Lorem 8', 0, '2023-02-02 03:10:08'),
-(9, 'Perez', '5534080960', 'Lorem 9', 0, '2023-02-02 03:14:18');
+INSERT INTO `contact_form` (`id_contactForm`, `name`, `phone`, `email`, `message`, `seen`, `date`) VALUES
+(1, 'Juan', '5534080960', NULL, 'Lorem', 0, '2023-02-02 02:48:03'),
+(2, 'Juan 2', '5534080960', NULL, 'Lorem 2', 0, '2023-02-02 02:49:47'),
+(3, 'Omar', '5512854958', NULL, 'Omar', 0, '2023-02-02 02:54:39'),
+(4, 'Juan', '5534080960', NULL, 'lorem', 0, '2023-02-02 03:07:51'),
+(5, 'Juan 5', '5534080960', NULL, 'lorem 5', 0, '2023-02-02 03:08:29'),
+(6, 'Juan 6 ', '5534080960', NULL, 'Lorem 6', 0, '2023-02-02 03:08:51'),
+(7, 'Perez', '5534080960', NULL, 'Lorem 7', 0, '2023-02-02 03:09:15'),
+(8, 'Peres', '5598765432', NULL, 'Lorem 8', 0, '2023-02-02 03:10:08'),
+(9, 'Perez', '5534080960', NULL, 'Lorem 9', 0, '2023-02-02 03:14:18'),
+(10, 'Juan', '5534080960', 'om@gmail.com', 'Kjhajkshdkjashd akjshd', 0, '2023-09-04 22:57:44'),
+(11, '', '', '', '', 0, '2023-09-04 22:58:53'),
+(12, 'Juan Gil', '5512345678', 'juan@gmail.com', 'KLhAJ ASKLDHJAJKSH DAKJSHD KJSAD', 0, '2023-09-04 23:00:09');
 
 -- --------------------------------------------------------
 
@@ -239,6 +243,25 @@ INSERT INTO `post_category` (`id_post`, `id_category`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `post_usuario`
+--
+
+CREATE TABLE `post_usuario` (
+  `id_postUsuario` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `id_post` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `post_usuario`
+--
+
+INSERT INTO `post_usuario` (`id_postUsuario`, `id_usuario`, `id_post`) VALUES
+(1, 1, 21);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `treatments`
 --
 
@@ -267,6 +290,55 @@ INSERT INTO `treatments` (`id_treatment`, `image`, `title`, `description`, `link
 (7, 'puentes-dentales.png', 'Puentes Dentales', 'Prótesis Dentales Fijas: Proporciona Estética Agradable • Aumenta tu Confianza y Seguridad • Puentes Dentales', 'puentes-dentales', 'Un puente dental está compuesto por un conjunto de coronas unidas entre sí para sustituir varios dientes faltantes. Para que el tratamiento función es necesario contar con dientes adyacentes que sirvan como pilares para sostener la estructura.', 'En este caso, se tallan los dientes a través de endodoncias para colocar el puente dental sobre una corona que va en el diente desgastado. Se colocan las coronas sobre los implantes dentales para soportarlo y esto proporciona una estética agradable al paciente, aumentando su confianza y seguridad.', 1),
 (8, 'periodoncia.png', 'Periodoncia', '¿Que es la Periodoncia? • ¿Para qué sirve la Periodoncia? • Conoce los sintomas, Causas, Consecuencias y Precios para Tratarala', 'periodoncia', 'La periodontitis es una infección en las encías que puede afectar gravemente los tejidos alrededor de los dientes e incluso provocar que se caigan. ', 'El procedimiento consiste en un raspado y alisado radicular, es una limpieza manual por debajo de las encías para eliminar las bacterias y el tejido inflamado para posteriormente alisar y pulir las superficies de la raíz del diente. En algunos casos es necesario realizar una cirugía de encías para corregir defectos que pueda haber provocado la enfermedad.', 1),
 (9, 'odontopediatria.png', 'Odontopediatría', '¿Qué es la Odontopediatría? • Dentista para Niños • Dentistas para/de Niños • Limpieza, Selladores, Resina', 'odontopediatria', 'En DIVUM también nos dedicamos a la salud bucal de los niños desde la infancia hasta la adolescencia.', 'Nuestros dentistas expertos en odontopediatría brindan atención integral que incluye cuidado dental preventivo que incluye limpieza y tratamientos con flúor, así como recomendaciones nutricionales y dietéticas e higiénicas, asesoramiento sobre hábitos (por ejemplo, uso de chupón y chuparse el dedo), evaluación y tratamiento tempranos para enderezar los dientes y corregir una mordida inadecuada, reparación de caries o defectos dentales, manejo de enfermedades y afecciones de las encías que incluyen úlceras, frenillos cortos, mucoceles y enfermedad periodontal pediátrica y atención de lesiones dentales (por ejemplo, dientes fracturados, desplazados o caídos).', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id_usuario` int(11) NOT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `titulo` varchar(255) DEFAULT NULL,
+  `fotoPerfil` varchar(255) DEFAULT 'imgPerfilPredeterminado.jpg',
+  `descripcionPersonal` varchar(500) DEFAULT NULL,
+  `fechaRegistro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `nombre`, `titulo`, `fotoPerfil`, `descripcionPersonal`, `fechaRegistro`) VALUES
+(1, 'Omar Camacho', 'Lic. en Ciencias de la Informática', 'imgPerfilPredeterminado.jpg', 'Licenciado en Ciencias del IPN', '2023-08-19 02:51:10'),
+(2, 'Pepe Watake', 'Lic. en Arquitectura', 'imgPerfilPredeterminado.jpg', 'Arqui', '2023-08-19 02:51:59'),
+(3, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:16:55'),
+(4, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:17:18'),
+(5, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:17:53'),
+(6, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:18:08');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios_login`
+--
+
+CREATE TABLE `usuarios_login` (
+  `id_usuarioLogin` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `correo` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios_login`
+--
+
+INSERT INTO `usuarios_login` (`id_usuarioLogin`, `id_usuario`, `correo`, `password`, `last_login`) VALUES
+(1, 5, 'om@gmail.com', '$2y$10$okewsH5HsAB1FI5YfYwO3.yrHZL6KJh1vpk/3fFgpqYs/ytUSmvIO', '2023-08-19 04:17:53'),
+(2, 6, 'om@gmail.com', '$2y$10$1RY1I/JPgnZ483EYm//9humbPc1qnvVGceuG20a1CUlUXp3IYWyiO', '2023-08-19 04:18:09');
 
 --
 -- Índices para tablas volcadas
@@ -311,10 +383,31 @@ ALTER TABLE `post_category`
   ADD KEY `id_category` (`id_category`);
 
 --
+-- Indices de la tabla `post_usuario`
+--
+ALTER TABLE `post_usuario`
+  ADD PRIMARY KEY (`id_postUsuario`),
+  ADD KEY `id_usuario` (`id_usuario`),
+  ADD KEY `id_post` (`id_post`);
+
+--
 -- Indices de la tabla `treatments`
 --
 ALTER TABLE `treatments`
   ADD PRIMARY KEY (`id_treatment`);
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- Indices de la tabla `usuarios_login`
+--
+ALTER TABLE `usuarios_login`
+  ADD PRIMARY KEY (`id_usuarioLogin`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -342,7 +435,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT de la tabla `contact_form`
 --
 ALTER TABLE `contact_form`
-  MODIFY `id_contactForm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_contactForm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `posts`
@@ -351,10 +444,28 @@ ALTER TABLE `posts`
   MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
+-- AUTO_INCREMENT de la tabla `post_usuario`
+--
+ALTER TABLE `post_usuario`
+  MODIFY `id_postUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `treatments`
 --
 ALTER TABLE `treatments`
   MODIFY `id_treatment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios_login`
+--
+ALTER TABLE `usuarios_login`
+  MODIFY `id_usuarioLogin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
@@ -372,6 +483,19 @@ ALTER TABLE `benefits`
 ALTER TABLE `post_category`
   ADD CONSTRAINT `post_category_ibfk_1` FOREIGN KEY (`id_post`) REFERENCES `posts` (`id_post`),
   ADD CONSTRAINT `post_category_ibfk_2` FOREIGN KEY (`id_category`) REFERENCES `categories` (`id_category`);
+
+--
+-- Filtros para la tabla `post_usuario`
+--
+ALTER TABLE `post_usuario`
+  ADD CONSTRAINT `post_usuario_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`),
+  ADD CONSTRAINT `post_usuario_ibfk_2` FOREIGN KEY (`id_post`) REFERENCES `posts` (`id_post`);
+
+--
+-- Filtros para la tabla `usuarios_login`
+--
+ALTER TABLE `usuarios_login`
+  ADD CONSTRAINT `usuarios_login_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

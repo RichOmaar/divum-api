@@ -59,7 +59,7 @@ class Posts {
         $db = $conn->get_connection();
 
         // $sql = "SELECT * FROM posts WHERE status = 1 ORDER BY id_post DESC LIMIT 3";
-        $sql = "SELECT DISTINCT posts.* FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category=categories.id_category WHERE categories.area = :area AND posts.status = 1 ORDER BY posts.id_post DESC LIMIT 3";
+        $sql = "SELECT DISTINCT posts.* FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category=categories.id_category WHERE categories.area = :area AND posts.status = 1 ORDER BY posts.id_post DESC LIMIT 5";
         $stmt = $db->prepare($sql);
 
         $stmt->bindParam(":area", $area);

@@ -8,9 +8,10 @@ header('Access-Control-Allow-Headers: *');
 if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['message'])) {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $send = ContactForm::mdlSendContactForm($name, $phone, $message);
+    $send = ContactForm::mdlSendContactForm($name, $phone, $email, $message);
 
     if(!$send) {
         echo '{"response":"error","message":"Error sending message"}';
