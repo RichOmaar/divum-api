@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 07-09-2023 a las 22:41:43
+-- Tiempo de generación: 15-09-2023 a las 17:14:10
 -- Versión del servidor: 5.7.39
 -- Versión de PHP: 8.2.0
 
@@ -208,7 +208,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id_post`, `title`, `foreword`, `content`, `image`, `url`, `author`, `date`, `status`) VALUES
-(8, 'Endodoncia: Qué es y cuándo se necesita', 'La endodoncia es una rama de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes. Es comúnmente conocida como terapia de conductos radiculares, y se utiliza para salvar un diente que está infectado o dañado. En esta publicación del blog, discutiremos qué es la endodoncia y cuándo se puede necesitar.', '<h2>¿Qué es la endodoncia?</h2><p>La <strong>endodoncia</strong> es la rama de la odontología que se ocupa de la pulpa dental y los tejidos que rodean la raíz del diente. La pulpa dental es el tejido blando que se encuentra dentro del diente y que contiene nervios, vasos sanguíneos y tejido conectivo. Cuando la pulpa se infecta o inflama, puede causar dolor y dañar el diente. El tratamiento <strong>endodóntico</strong> implica la eliminación de la pulpa dañada o infectada, la limpieza y el conformado de los conductos radiculares, y el sellado del diente para evitar una infección adicional.</p><p><br></p><h2>¿Cuándo se puede necesitar un tratamiento endodóntico?</h2><p>El tratamiento <strong>endodóntico</strong> se necesita cuando la pulpa dental se infecta o inflama. Esto puede ser causado por una variedad de factores, incluyendo la caries dental, traumatismo en el diente, o procedimientos dentales repetidos en el mismo diente. Los síntomas de una pulpa infectada o inflamada incluyen dolor, sensibilidad al calor o al frío, hinchazón y un mal sabor en la boca. Si experimenta alguno de estos síntomas, es importante que consulte a su dentista lo antes posible.</p><p><br></p><h2>Proceso de tratamiento endodóntico:</h2><ul><li>La <strong>endodoncia</strong> es una rama especializada de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes.</li><li>Si experimenta síntomas de una pulpa infectada o inflamada, es importante que consulte a su dentista lo antes posible.</li><li>El tratamiento <strong>endodóntico</strong> puede salvar un diente dañado o infectado y evitar la necesidad de extracción.</li><li>Con el cuidado adecuado, un diente tratado puede durar toda la vida.</li></ul><p><br></p>', 'endodonciaquesycundosenecesita.jpg', 'endodoncia-que-es-y-cuando-se-necesita', 'Omar Camacho by GPT', '2023-03-03 02:28:55', 1),
+(8, 'Endodoncia: Qué es y cuándo se necesita', 'Test', '<h2>¿Qué es la endodoncia?</h2><p>La <strong>endodoncia</strong> es la rama de la odontología que se ocupa de la pulpa dental y los tejidos que rodean la raíz del diente. La pulpa dental es el tejido blando que se encuentra dentro del diente y que contiene nervios, vasos sanguíneos y tejido conectivo. Cuando la pulpa se infecta o inflama, puede causar dolor y dañar el diente. El tratamiento <strong>endodóntico</strong> implica la eliminación de la pulpa dañada o infectada, la limpieza y el conformado de los conductos radiculares, y el sellado del diente para evitar una infección adicional.</p><p><br></p><h2>¿Cuándo se puede necesitar un tratamiento endodóntico?</h2><p>El tratamiento <strong>endodóntico</strong> se necesita cuando la pulpa dental se infecta o inflama. Esto puede ser causado por una variedad de factores, incluyendo la caries dental, traumatismo en el diente, o procedimientos dentales repetidos en el mismo diente. Los síntomas de una pulpa infectada o inflamada incluyen dolor, sensibilidad al calor o al frío, hinchazón y un mal sabor en la boca. Si experimenta alguno de estos síntomas, es importante que consulte a su dentista lo antes posible.</p><p><br></p><h2>Proceso de tratamiento endodóntico:</h2><ul><li>La <strong>endodoncia</strong> es una rama especializada de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes.</li><li>Si experimenta síntomas de una pulpa infectada o inflamada, es importante que consulte a su dentista lo antes posible.</li><li>El tratamiento <strong>endodóntico</strong> puede salvar un diente dañado o infectado y evitar la necesidad de extracción.</li><li>Con el cuidado adecuado, un diente tratado puede durar toda la vida.</li></ul>', 'endodonciaquesycundosenecesita.jpg', NULL, 'endodoncia-que-es-y-cuando-se-necesita', '2023-09-13 04:32:16', 1),
 (9, 'Caries dental: Qué es y cómo prevenirla', 'La caries dental es uno de los problemas dentales más comunes en todo el mundo. Es una enfermedad infecciosa y destructiva que afecta a los dientes y puede causar dolor, sensibilidad y problemas de masticación. En esta publicación del blog, hablaremos sobre qué es la caries dental, qué la causa y cómo se puede prevenir.', '<h2>¿Qué es la caries dental?</h2><p>La caries dental es una enfermedad que afecta a los dientes y que se produce cuando las bacterias en la boca producen ácidos que desmineralizan el esmalte dental. El esmalte es la capa protectora y dura que cubre los dientes, y cuando se desmineraliza, los dientes pueden desarrollar agujeros o cavidades. Si no se trata, la caries dental puede avanzar y afectar a la pulpa dental, lo que puede causar dolor y eventualmente la pérdida del diente.</p><p><br></p><h2>¿Qué causa la caries dental?</h2><p>La caries dental es causada por la combinación de bacterias en la boca, alimentos azucarados y una higiene oral deficiente. Las bacterias en la boca forman una película pegajosa llamada placa dental, que se adhiere a los dientes y produce ácidos que pueden desmineralizar el esmalte. Los alimentos azucarados son especialmente peligrosos, ya que las bacterias utilizan los azúcares para producir más ácidos. Una higiene oral deficiente, como no cepillarse los dientes con regularidad o no usar hilo dental, también puede contribuir a la caries dental.</p><p><br></p><h2>¿Cómo se puede prevenir la caries dental?</h2><p>La buena noticia es que la caries dental es una enfermedad prevenible. Aquí hay algunos consejos para prevenir la caries dental:</p><ol><li>Cepíllese los dientes dos veces al día con pasta dental que contenga flúor.</li><li>Use hilo dental diariamente para eliminar la placa dental y los restos de alimentos entre los dientes.</li><li>Limite los alimentos y bebidas azucaradas y pegajosas, como los refrescos y los caramelos.</li><li>Aumente su consumo de alimentos ricos en calcio, como los productos lácteos.</li><li>Visite a su dentista regularmente para revisiones y limpiezas dentales.</li></ol><p><br></p><h2>Conclusión</h2><p>La caries dental es una enfermedad común que puede causar dolor, sensibilidad y problemas de masticación. Se puede prevenir con una buena higiene oral, una dieta saludable y visitas regulares al dentista. Si sospecha que tiene una caries dental, es importante que consulte a su dentista lo antes posible para recibir tratamiento.</p>', 'cariesdentalquesycmoprevenirla.jpg', 'caries-dental-que-es-y-como-prevenirla', 'Omar Camacho by GPT', '2023-03-03 02:29:27', 1),
 (10, 'TEst', 'sdssd', 'sdsdsd', 'cariesdentalquesycmoprevenirla.jpg', 'url', 'om', '2023-08-04 21:53:07', 1),
 (11, 'asdad', 'asdadd', 'adadas', 'tercermuestramuconcaractresespecialestambin.jpg', '', 'asdad', '2023-08-04 21:53:20', 1),
@@ -251,13 +251,6 @@ CREATE TABLE `post_usuario` (
   `id_usuario` int(11) NOT NULL,
   `id_post` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `post_usuario`
---
-
-INSERT INTO `post_usuario` (`id_postUsuario`, `id_usuario`, `id_post`) VALUES
-(1, 1, 21);
 
 -- --------------------------------------------------------
 
@@ -306,18 +299,6 @@ CREATE TABLE `usuario` (
   `fechaRegistro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `usuario`
---
-
-INSERT INTO `usuario` (`id_usuario`, `nombre`, `titulo`, `fotoPerfil`, `descripcionPersonal`, `fechaRegistro`) VALUES
-(1, 'Omar Camacho', 'Lic. en Ciencias de la Informática', 'imgPerfilPredeterminado.jpg', 'Licenciado en Ciencias del IPN', '2023-08-19 02:51:10'),
-(2, 'Pepe Watake', 'Lic. en Arquitectura', 'imgPerfilPredeterminado.jpg', 'Arqui', '2023-08-19 02:51:59'),
-(3, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:16:55'),
-(4, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:17:18'),
-(5, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:17:53'),
-(6, 'Omar Camacho', 'Lic', 'imgPerfilPredeterminado.jpg', 'kjalkjd', '2023-08-19 04:18:08');
-
 -- --------------------------------------------------------
 
 --
@@ -331,14 +312,6 @@ CREATE TABLE `usuarios_login` (
   `password` varchar(255) NOT NULL,
   `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `usuarios_login`
---
-
-INSERT INTO `usuarios_login` (`id_usuarioLogin`, `id_usuario`, `correo`, `password`, `last_login`) VALUES
-(1, 5, 'om@gmail.com', '$2y$10$okewsH5HsAB1FI5YfYwO3.yrHZL6KJh1vpk/3fFgpqYs/ytUSmvIO', '2023-08-19 04:17:53'),
-(2, 6, 'om@gmail.com', '$2y$10$1RY1I/JPgnZ483EYm//9humbPc1qnvVGceuG20a1CUlUXp3IYWyiO', '2023-08-19 04:18:09');
 
 --
 -- Índices para tablas volcadas
@@ -447,7 +420,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT de la tabla `post_usuario`
 --
 ALTER TABLE `post_usuario`
-  MODIFY `id_postUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_postUsuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `treatments`
@@ -459,13 +432,13 @@ ALTER TABLE `treatments`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios_login`
 --
 ALTER TABLE `usuarios_login`
-  MODIFY `id_usuarioLogin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuarioLogin` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas

@@ -126,4 +126,49 @@ class Posts {
 
         return ($stmt->rowCount() > 0) ? $stmt->fetch(PDO::FETCH_ASSOC) : false;
     }
+
+    public static function mdlUpdatePost($post_id, $title, $foreword, $content, $url, $author) {
+    $conn = new Connection();
+    $db = $conn->get_connection();
+
+    $sql = "UPDATE posts SET title = :title, foreword = :foreword, content = :content, url = :url, author = :author WHERE id_post = :post_id";
+
+    $stmt = $db->prepare($sql);
+
+    $stmt->bindParam(":post_id", $post_id);
+    $stmt->bindParam(":title", $title);
+    $stmt->bindParam(":foreword", $foreword);
+    $stmt->bindParam(":content", $content);
+    $stmt->bindParam(":url", $url);
+    $stmt->bindParam(":author", $author);
+
+    $stmt->execute();
+
+    return ($stmt->rowCount() > 0) ? true : false;
+}
+
+public static function mdlUpdatePostCategory($post_id, $category) {
+    $conn = new Connection();
+    $db = $conn->get_connection();
+
+    // First, delete existing categories for the post
+    $sqlDelete = "DELETE FROM post_category WHERE id_post = :post_id";
+    $stmtDelete = $db->prepare($sqlDelete);
+    $stmtDelete->bindParam(":post_id", $post_id);
+    $stmtDelete->execute();
+
+    // Now, insert the new categories
+    $categories2 = explode(',', $category);
+    
+    foreach ($categories2 as $category) {
+        $sqlInsert = "INSERT INTO post_category (id_post, id_category) VALUES (:post_id, :category)";
+        $stmtInsert = $db->prepare($sqlInsert);
+        $stmtInsert->bindParam(":post_id", $post_id);
+        $stmtInsert->bindParam(":category", $category);
+        $stmtInsert->execute();
+    }
+
+    return true; // Return true assuming the categories were updated successfully.
+}
+
 }
