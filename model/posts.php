@@ -113,7 +113,7 @@ class Posts
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql ="SELECT posts.id_post , posts.title , posts.url FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category = categories.id_category WHERE categories.area = :area ORDER BY RAND() LIMIT 5";
+        $sql ="SELECT posts.id_post , posts.title , posts.url FROM posts INNER JOIN post_category ON posts.id_post = post_category.id_post INNER JOIN categories ON post_category.id_category = categories.id_category WHERE categories.area = :area AND posts.status = 1 ORDER BY RAND() LIMIT 5";
 
         $stmt = $db->prepare($sql);
 
