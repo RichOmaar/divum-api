@@ -40,4 +40,19 @@ class User {
 
         return $id;
     }
+
+    public static function mdlGetUserByEmail($email) {
+        $conn = new Connection();
+        $db = $conn->get_connection();
+
+        $sql = "SELECT usuario.id_usuario, usuario.nombre, usuario.titulo, usuario.fotoPerfil, usuarios_login.password FROM usuarios_login INNER JOIN usuario ON usuarios_login.id_usuario = usuario.id_usuario WHERE usuarios_login.correo = :email";
+
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(":email", $email);
+
+        $stmt->execute();
+
+        return ($stmt->rowCount() > 0) ? $stmt->fetch(PDO::FETCH_ASSOC) : false;
+    }
 }
