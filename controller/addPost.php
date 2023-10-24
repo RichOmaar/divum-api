@@ -12,6 +12,7 @@ if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categori
     $author = $_POST['author'];
     $url = $_POST['url'];
     $categories = $_POST['categories'];
+    (!$idUser) ? $idUser = 2 : $_POST['idUser'];
 
     if(isset($_FILES['image']['name'])) {
         $image = $_FILES['image']['name'];
@@ -43,6 +44,8 @@ if(isset($_POST['title']) && isset($_POST['foreword']) && isset($_POST['categori
                         return;
                     }
                 }
+
+                $addPostUser = Posts::mdlAddPostUser($post, $idUser);
 
                 echo '{"response":"success","message":'.json_encode($post).'}';
                 return;
