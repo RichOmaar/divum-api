@@ -3,19 +3,13 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 15-09-2023 a las 17:14:10
+-- Tiempo de generación: 28-10-2023 a las 08:39:32
 -- Versión del servidor: 5.7.39
 -- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `divum`
@@ -53,7 +47,7 @@ INSERT INTO `beauty_services` (`id_beautyService`, `title`, `subtitle`, `descrip
 (6, 'Tratamientos para hidratar, nutrir y estimular la piel', 'Piel saludable', 'Tratamientos especializados para hidratar, nutrir y estimular la piel, mejorando su salud y apariencia.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'tratamientos-para-hidratar-nutrir-y-estimular-la-piel', 1, 'Cuidado intensivo de la piel', 'Nuestros tratamientos para hidratar, nutrir y estimular la piel ofrecen un cuidado intensivo y personalizado para mejorar su salud y apariencia general. Mediante productos y técnicas especializadas, proporcionamos una hidratación profunda que revitaliza y suaviza la piel. Además, nutrimos con nutrientes esenciales que fortalecen y protegen de daños ambientales. Estimulamos la regeneración celular, promoviendo una piel más luminosa y rejuvenecida. Estos tratamientos son ideales para mantener una piel radiante y saludable, ya que ayudan a combatir los signos del envejecimiento, reducir la opacidad y mejorar la textura cutánea. Recupera la vitalidad de tu piel y disfruta de un aspecto radiante y rejuvenecido con nuestros tratamientos especializados para cuidar tu piel en profundidad.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
 (7, 'Tratamiento para quitar manchas en piel', 'Sin manchas', 'Tecnologías avanzadas reducen manchas, hiperpigmentación y decoloración, revelando una piel uniforme.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'tratamiento-para-quitar-manchas-en-piel', 1, 'Piel uniforme y luminosa', 'Nuestro tratamiento para quitar manchas en la piel utiliza tecnologías avanzadas y productos especializados para reducir la apariencia de manchas, hiperpigmentación y decoloración, restaurando un tono de piel más uniforme y radiante. Mediante métodos seguros y eficaces, eliminamos las manchas oscuras causadas por el sol, la edad o condiciones cutáneas, permitiendo que tu piel recupere su luminosidad y juventud. El proceso de rejuvenecimiento cutáneo se logra gracias a nuestra combinación de técnicas y productos que ayudan a disminuir la sobreproducción de melanina, permitiendo que las manchas se desvanezcan gradualmente. Obtén una piel más uniforme, luminosa y radiante con nuestro tratamiento especializado para quitar manchas, que está diseñado para mejorar la textura y apariencia de tu piel, brindándote una apariencia más joven y saludable.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
 (8, 'Tratamiento para el acné', 'Control del acné', 'Aborda las causas del acné, controlando la grasa y mejorando la apariencia de la piel afectada.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'tratamiento-para-el-acne', 1, 'Piel libre de imperfecciones', 'Nuestro tratamiento para el acné aborda las causas subyacentes de esta condición cutánea, utilizando técnicas y productos diseñados para reducir la inflamación, controlar la producción de grasa y mejorar la apariencia general de la piel afectada. Con enfoque en la limpieza profunda y la eliminación de las bacterias que provocan el acné, nuestro tratamiento te proporciona una piel más limpia, equilibrada y libre de imperfecciones. Además, trabajamos para reducir las marcas y cicatrices que el acné deja en la piel, promoviendo una apariencia más uniforme y suave. Recupera tu confianza con nuestra solución efectiva y personalizada para el acné, que te ayuda a mantener bajo control los brotes acneicos y a mejorar la salud general de tu piel.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-(9, 'Aplicación de toxina', 'Arrugas suavizadas', 'Inyecciones de toxina botulínica reducen arrugas y líneas de expresión, brindando un aspecto rejuvenecido.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'aplicacion-de-toxina', 1, 'Aspecto rejuvenecido', 'Nuestro procedimiento de aplicación de toxina botulínica, comúnmente conocida como \"botox\", es una solución estética no invasiva y de resultados efectivos. Mediante la inyección de pequeñas cantidades de toxina botulínica en músculos faciales específicos, logramos suavizar las líneas de expresión y arrugas, brindándote un aspecto rejuvenecido y más fresco. El tratamiento ayuda a relajar los músculos, reduciendo la aparición de líneas de expresión en la frente, entrecejo y patas de gallo. Con una aplicación precisa y personalizada, obtendrás resultados naturales y duraderos. Disfruta de una apariencia más joven y radiante con nuestro servicio de aplicación de toxina que te ayudará a lucir y sentirte mejor contigo mismo/a.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+(9, 'Aplicación de toxina', 'Arrugas suavizadas', 'Inyecciones de toxina botulínica reducen arrugas y líneas de expresión, brindando un aspecto rejuvenecido.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'aplicacion-de-toxina', 0, 'Aspecto rejuvenecido', 'Nuestro procedimiento de aplicación de toxina botulínica, comúnmente conocida como \"botox\", es una solución estética no invasiva y de resultados efectivos. Mediante la inyección de pequeñas cantidades de toxina botulínica en músculos faciales específicos, logramos suavizar las líneas de expresión y arrugas, brindándote un aspecto rejuvenecido y más fresco. El tratamiento ayuda a relajar los músculos, reduciendo la aparición de líneas de expresión en la frente, entrecejo y patas de gallo. Con una aplicación precisa y personalizada, obtendrás resultados naturales y duraderos. Disfruta de una apariencia más joven y radiante con nuestro servicio de aplicación de toxina que te ayudará a lucir y sentirte mejor contigo mismo/a.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
 (10, 'Arrugas', 'Firmeza y elasticidad', 'Tratamientos para suavizar arrugas y líneas de expresión, mejorando la firmeza y elasticidad de la piel.', 'https://images.pexels.com/photos/8686319/pexels-photo-8686319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'arrugas', 1, 'Tratamientos antiarrugas', 'Nuestros tratamientos especializados para combatir las arrugas y líneas de expresión te brindan una solución efectiva y personalizada para mejorar la firmeza y elasticidad de tu piel. Utilizando técnicas avanzadas y productos de alta calidad, trabajamos para suavizar y reducir la apariencia de las arrugas, brindándote una piel más suave y rejuvenecida. Ya sea mediante procedimientos no invasivos como el botox o tratamientos con rellenos dérmicos, nuestro equipo de profesionales te ayudará a recuperar la juventud y la confianza en tu apariencia. Disfruta de una piel revitalizada y radiante con nuestros tratamientos antiarrugas diseñados para satisfacer tus necesidades y objetivos estéticos.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
 (11, 'Aplicación de rellenos (en labios y surcos)', 'Volumen restaurado', 'Rellenos dérmicos aumentan el volumen de labios y restauran surcos y arrugas, revitalizando el rostro.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'aplicacion-de-rellenos', 1, 'Labios más voluminosos', 'Nuestro servicio de aplicación de rellenos dérmicos te ofrece la posibilidad de realzar tus labios y rellenar surcos faciales para lograr un aspecto más juvenil y equilibrado. Utilizamos rellenos seguros y de alta calidad que se adaptan a tus necesidades y preferencias estéticas. Si deseas labios más voluminosos y sensuales, nuestros expertos pueden darles forma y definición con resultados naturales. También podemos reducir la apariencia de surcos faciales, como las líneas de marioneta y los surcos nasolabiales, para mejorar la armonía de tu rostro. Con nuestros tratamientos de aplicación de rellenos, te ayudaremos a lograr una apariencia rejuvenecida y radiante que resalte tu belleza única.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
 (12, 'Aplicación de pestañas', 'Mirada expresiva', 'Extensiones de alta calidad realzan tus pestañas naturales, brindando una mirada expresiva y glamorosa.', 'https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'aplicacion-de-pestanas', 1, 'Pestañas más largas y voluminosas', 'Nuestro servicio de aplicación de pestañas ofrece extensiones de alta calidad que realzan y dan volumen a tus pestañas naturales, brindándote una mirada más expresiva y glamorosa. Utilizamos técnicas avanzadas y productos seguros para aplicar las extensiones, asegurándonos de que se vean naturales y cómodas. Si deseas unas pestañas más largas y exuberantes sin tener que recurrir a pestañas postizas diariamente, nuestras extensiones son la solución perfecta. Olvídate de aplicar y remover máscara de pestañas todos los días, y disfruta de la comodidad y belleza duradera que nuestras extensiones de pestañas te ofrecen. Además, nuestras extensiones están diseñadas para resistir el agua, el calor y la humedad, lo que te permite llevar un aspecto impecable en cualquier situación. Con nuestro servicio de aplicación de pestañas, lograrás una mirada cautivadora y seductora que resaltará tus ojos y realzará tu belleza natural.', 'https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
@@ -208,19 +202,12 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id_post`, `title`, `foreword`, `content`, `image`, `url`, `author`, `date`, `status`) VALUES
-(8, 'Endodoncia: Qué es y cuándo se necesita', 'Test', '<h2>¿Qué es la endodoncia?</h2><p>La <strong>endodoncia</strong> es la rama de la odontología que se ocupa de la pulpa dental y los tejidos que rodean la raíz del diente. La pulpa dental es el tejido blando que se encuentra dentro del diente y que contiene nervios, vasos sanguíneos y tejido conectivo. Cuando la pulpa se infecta o inflama, puede causar dolor y dañar el diente. El tratamiento <strong>endodóntico</strong> implica la eliminación de la pulpa dañada o infectada, la limpieza y el conformado de los conductos radiculares, y el sellado del diente para evitar una infección adicional.</p><p><br></p><h2>¿Cuándo se puede necesitar un tratamiento endodóntico?</h2><p>El tratamiento <strong>endodóntico</strong> se necesita cuando la pulpa dental se infecta o inflama. Esto puede ser causado por una variedad de factores, incluyendo la caries dental, traumatismo en el diente, o procedimientos dentales repetidos en el mismo diente. Los síntomas de una pulpa infectada o inflamada incluyen dolor, sensibilidad al calor o al frío, hinchazón y un mal sabor en la boca. Si experimenta alguno de estos síntomas, es importante que consulte a su dentista lo antes posible.</p><p><br></p><h2>Proceso de tratamiento endodóntico:</h2><ul><li>La <strong>endodoncia</strong> es una rama especializada de la odontología que se encarga del tratamiento de la pulpa dental y los tejidos circundantes.</li><li>Si experimenta síntomas de una pulpa infectada o inflamada, es importante que consulte a su dentista lo antes posible.</li><li>El tratamiento <strong>endodóntico</strong> puede salvar un diente dañado o infectado y evitar la necesidad de extracción.</li><li>Con el cuidado adecuado, un diente tratado puede durar toda la vida.</li></ul>', 'endodonciaquesycundosenecesita.jpg', NULL, 'endodoncia-que-es-y-cuando-se-necesita', '2023-09-13 04:32:16', 1),
-(9, 'Caries dental: Qué es y cómo prevenirla', 'La caries dental es uno de los problemas dentales más comunes en todo el mundo. Es una enfermedad infecciosa y destructiva que afecta a los dientes y puede causar dolor, sensibilidad y problemas de masticación. En esta publicación del blog, hablaremos sobre qué es la caries dental, qué la causa y cómo se puede prevenir.', '<h2>¿Qué es la caries dental?</h2><p>La caries dental es una enfermedad que afecta a los dientes y que se produce cuando las bacterias en la boca producen ácidos que desmineralizan el esmalte dental. El esmalte es la capa protectora y dura que cubre los dientes, y cuando se desmineraliza, los dientes pueden desarrollar agujeros o cavidades. Si no se trata, la caries dental puede avanzar y afectar a la pulpa dental, lo que puede causar dolor y eventualmente la pérdida del diente.</p><p><br></p><h2>¿Qué causa la caries dental?</h2><p>La caries dental es causada por la combinación de bacterias en la boca, alimentos azucarados y una higiene oral deficiente. Las bacterias en la boca forman una película pegajosa llamada placa dental, que se adhiere a los dientes y produce ácidos que pueden desmineralizar el esmalte. Los alimentos azucarados son especialmente peligrosos, ya que las bacterias utilizan los azúcares para producir más ácidos. Una higiene oral deficiente, como no cepillarse los dientes con regularidad o no usar hilo dental, también puede contribuir a la caries dental.</p><p><br></p><h2>¿Cómo se puede prevenir la caries dental?</h2><p>La buena noticia es que la caries dental es una enfermedad prevenible. Aquí hay algunos consejos para prevenir la caries dental:</p><ol><li>Cepíllese los dientes dos veces al día con pasta dental que contenga flúor.</li><li>Use hilo dental diariamente para eliminar la placa dental y los restos de alimentos entre los dientes.</li><li>Limite los alimentos y bebidas azucaradas y pegajosas, como los refrescos y los caramelos.</li><li>Aumente su consumo de alimentos ricos en calcio, como los productos lácteos.</li><li>Visite a su dentista regularmente para revisiones y limpiezas dentales.</li></ol><p><br></p><h2>Conclusión</h2><p>La caries dental es una enfermedad común que puede causar dolor, sensibilidad y problemas de masticación. Se puede prevenir con una buena higiene oral, una dieta saludable y visitas regulares al dentista. Si sospecha que tiene una caries dental, es importante que consulte a su dentista lo antes posible para recibir tratamiento.</p>', 'cariesdentalquesycmoprevenirla.jpg', 'caries-dental-que-es-y-como-prevenirla', 'Omar Camacho by GPT', '2023-03-03 02:29:27', 1),
-(10, 'TEst', 'sdssd', 'sdsdsd', 'cariesdentalquesycmoprevenirla.jpg', 'url', 'om', '2023-08-04 21:53:07', 1),
-(11, 'asdad', 'asdadd', 'adadas', 'tercermuestramuconcaractresespecialestambin.jpg', '', 'asdad', '2023-08-04 21:53:20', 1),
-(12, 'adafa', 'adfsdfs', 'sfsdf', 'segundapruebadeurkl.jpg', NULL, 'sdfsdf', '2023-08-04 21:53:15', 1),
-(13, 'lkasjkljakld', 'lakjlkajfls', '<p>cdfsdfsdf sdf sdf s </p>', 'lkasjkljakld.jpg', NULL, 'fadfsf', '2023-03-16 21:29:16', 1),
-(14, 'Caries dental: Qué es y cómo prevenirla', 'Prefacio', '<p>asdasdsad</p>', 'cariesdentalquesycmoprevenirla.jpg', NULL, 'Yo', '2023-03-17 03:52:36', 1),
-(15, 'Prueba final par aprobar la url>?', 'Prefacio de la prueba', '<h1>Prueba</h1><p><br></p><p>Test prueba</p>', 'pruebafinalparaprobarlaurl.jpg', NULL, 'prueba-final-par-aprobar-la-url>?', '2023-03-17 04:01:45', 1),
-(16, 'Segunda prueba de URKL?:,?', 'Test atesj;lkasd', '<p>asdsfasfs</p>', 'segundapruebadeurkl.jpg', 'segunda-prueba-de-urkl?:,?', 'asdsd', '2023-03-17 04:04:37', 1),
-(17, 'Tercer muestra ?>.m,.,., u con caractéres especiales también', 'asdasdsadf', '<p>dsafdfsdfasf</p>', 'tercermuestramuconcaractresespecialestambin.jpg', 'tercer-muestra-m-u-con-caracteres-especiales-tambien', 'asdasdffsaf', '2023-03-17 04:16:57', 1),
-(18, '¿Cómo estás? Un blog', 'dfdf', '<p>sfwdsfdsfsdfsf</p>', '--c--mo-est--s--un-blog.jpg', '--c--mo-est--s--un-blog.jpg', 'Yo', '2023-03-20 20:46:02', 1),
-(19, 'Trabajando duro o Duando en el trabajo', 'Prefacio', '<p>sdsdsdsdsdsd</p>', 'trabajandodurooduandoeneltrabajo.jpg', 'trabajando-duro-o-duando-en-el-trabajo', 'Autor', '2023-03-20 21:01:00', 1),
-(21, 'Microblading para Cejas Perfectas: Logra tus Cejas de Ensueño', 'Siempre has soñado con cejas perfectas que enmarquen tu rostro de manera natural y elegante. El microblading es la solución definitiva para lograrlo. En nuestra clínica de belleza, te ofrecemos el innovador servicio de microblading que transformará tus cejas y realzará tu belleza de manera sorprendente.', '<h2>¿Qué es el Microblading?</h2><p>El microblading es una técnica avanzada que implica la aplicación manual de pigmento semipermanente en la capa superior de la piel. Mediante el uso de microcuchillas estériles, nuestro equipo de artistas del microblading crea trazos finos que imitan la apariencia de los cabellos naturales de las cejas. Este proceso meticuloso resulta en cejas de aspecto natural y simétrico, mejorando tu expresión facial y brindándote una mirada impactante.</p><h2>Beneficios del Microblading para Cejas</h2><ul><li><strong>Aspecto Natural:</strong> El microblading ofrece resultados realistas y de aspecto natural, sin la apariencia artificial de maquillaje convencional.</li><li><strong>Durabilidad:</strong> Disfruta de cejas perfectas durante meses. El microblading tiene una duración prolongada, permitiéndote lucir increíble en todo momento.</li><li><strong>Ahorro de Tiempo:</strong> Olvídate de la rutina diaria de dibujar tus cejas. Despiértate con cejas listas para impresionar.</li><li><strong>Personalización:</strong> Nuestros expertos en microblading ajustarán la forma y el color de tus cejas según tus preferencias únicas.</li></ul><p><br></p><h2>El Proceso de Microblading</h2><ol><li><strong>Consulta Personalizada:</strong> Comenzamos con una consulta detallada para entender tus objetivos y preferencias de cejas.</li><li><strong>Diseño de Cejas:</strong> Nuestros artistas profesionales diseñarán la forma ideal de tus cejas, teniendo en cuenta tu estructura facial.</li><li><strong>Aplicación del Pigmento:</strong> Utilizando microcuchillas estériles, depositamos cuidadosamente el pigmento en trazos finos y precisos.</li><li><strong>Adormecimiento:</strong> Aplicamos un adormecimiento tópico para garantizar tu comodidad durante el procedimiento.</li><li><strong>Resultados Impresionantes:</strong> Al final de la sesión, te sorprenderás con unas cejas perfectamente realzadas y de aspecto natural.</li></ol><p><br></p><h2>Cuidado Posterior al Microblading</h2><ul><li><strong>Evita la Exposición al Sol:</strong> Protege tus cejas recién microblading de la luz solar directa y el bronceado.</li><li><strong>Hidratación:</strong> Mantén tus cejas hidratadas con productos recomendados por nuestros expertos.</li><li><strong>Evita Picking:</strong> No arranques ni frotes tus cejas durante el proceso de curación.</li></ul><p><br></p><h2>¿Es el Microblading adecuado para ti?</h2><p>El microblading es ideal para personas que desean mejorar la apariencia de sus cejas de manera natural y duradera. Es seguro para la mayoría de los tipos de piel y ofrece resultados asombrosos tanto para cejas densas como para aquellas con áreas dispersas. Si deseas una mejora de cejas que resalte tu belleza única, el microblading es la elección perfecta.</p><p><br></p><h2>Reserva tu Sesión de Microblading</h2><p>¿Estás lista para transformar tus cejas y conseguir una mirada impresionante? ¡Reserva una consulta en nuestra clínica de belleza y descubre cómo el microblading puede mejorar tu apariencia de manera extraordinaria!</p><p>Para obtener más información sobre nuestros servicios de microblading y cuidado de cejas, no dudes en contactarnos. ¡Estamos aquí para ayudarte a lograr tus cejas de ensueño!</p>', 'microblading-para-cejas-perfectas--logra-tus-cejas-de-ensue--o.png', 'microblading-para-cejas-perfectas-logra-tus-cejas-de-ensueo', 'Juan Gil', '2023-08-08 01:07:16', 1);
+(1, 'Tratamientos faciales para rejuvenecer tu piel: una guía completa', 'El paso del tiempo es inevitable, pero eso no significa que no podamos hacer algo para retrasar los signos del envejecimiento. Los tratamientos faciales son una excelente manera de mejorar la apariencia de la piel, reducir las arrugas, las líneas de expresión y la flacidez.', '<p>En esta guía, te explicaremos los diferentes tipos de tratamientos faciales que existen en México, así como sus beneficios y riesgos. También te daremos algunos consejos para elegir el tratamiento adecuado para ti.</p><h2></h2><p><br></p><p><strong>Rellenos dérmicos</strong></p><p>Los rellenos dérmicos son tratamientos mínimamente invasivos que se utilizan para rellenar las arrugas y líneas de expresión. Los rellenos más comunes en México son el ácido hialurónico y el colágeno.</p><p><strong>Beneficios:</strong></p><ul><li class=\"ql-indent-1\">Reducen las arrugas y líneas de expresión</li><li class=\"ql-indent-1\">Aumentan el volumen de los labios y pómulos</li><li class=\"ql-indent-1\">Mejoran la textura de la piel</li></ul><p><strong>Riesgos:</strong></p><ul><li class=\"ql-indent-1\">Inflamación</li><li class=\"ql-indent-1\">Enrojecimiento</li><li class=\"ql-indent-1\">Hematomas</li><li class=\"ql-indent-1\">Raramente, infección</li></ul><p><br></p><p><strong>Toxina botulínica</strong></p><p>La toxina botulínica es un tratamiento mínimamente invasivo que se utiliza para relajar los músculos faciales, lo que ayuda a reducir las arrugas de expresión.</p><p><strong>Beneficios:</strong></p><ul><li class=\"ql-indent-1\">Reduce las arrugas de expresión, como las patas de gallo y las arrugas de la frente</li><li class=\"ql-indent-1\">Mejora la apariencia de la piel</li></ul><p><strong>Riesgos:</strong></p><ul><li class=\"ql-indent-1\">Enrojecimiento</li><li class=\"ql-indent-1\">Inflamación</li><li class=\"ql-indent-1\">Dolor</li><li class=\"ql-indent-1\">Raramente, visión borrosa</li></ul><p><br></p><p><strong>Peelings químicos</strong></p><p>Los peelings químicos son tratamientos que eliminan las capas superficiales de la piel, lo que ayuda a mejorar el tono y la textura de la piel.</p><p><strong>Beneficios:</strong></p><ul><li class=\"ql-indent-1\">Eliminan las manchas</li><li class=\"ql-indent-1\">Reducen las arrugas</li><li class=\"ql-indent-1\">Mejoran la textura de la piel</li></ul><p><strong>Riesgos:</strong></p><ul><li class=\"ql-indent-1\">Enrojecimiento</li><li class=\"ql-indent-1\">Descamación</li><li class=\"ql-indent-1\">En raras ocasiones, infección</li></ul><p><br></p><p><strong>Luz pulsada intensa (IPL)</strong></p><p>La luz pulsada intensa (IPL) es un tratamiento que utiliza la luz para eliminar las manchas, las arrugas y la flacidez.</p><p><strong>Beneficios:</strong></p><ul><li class=\"ql-indent-1\">Elimina las manchas</li><li class=\"ql-indent-1\">Reduce las arrugas</li><li class=\"ql-indent-1\">Mejora la textura de la piel</li></ul><p><strong>Riesgos:</strong></p><ul><li class=\"ql-indent-1\">Enrojecimiento</li><li class=\"ql-indent-1\">Descamación</li><li class=\"ql-indent-1\">En raras ocasiones, infección</li></ul><p><br></p><p><strong>Radiofrecuencia</strong></p><p>La radiofrecuencia es un tratamiento que utiliza la energía térmica para tensar la piel y reducir la flacidez.</p><p><strong>Beneficios:</strong></p><ul><li class=\"ql-indent-1\">Tensa la piel</li><li class=\"ql-indent-1\">Reduce la flacidez</li><li class=\"ql-indent-1\">Mejora la textura de la piel</li></ul><p><strong>Riesgos:</strong></p><ul><li class=\"ql-indent-1\">Enrojecimiento</li><li class=\"ql-indent-1\">Inflamación</li><li class=\"ql-indent-1\">En raras ocasiones, infección</li></ul><p><br></p><p><strong>Consejos para elegir el tratamiento adecuado:</strong></p><ul><li><strong>Considera tu </strong><a href=\"https://aprende.com/blog/moda-y-belleza/maquillaje/tipos-de-piel/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>tipo de piel</strong></a><strong>:</strong> No todos los tratamientos faciales son adecuados para todos los tipos de piel. Asegúrate de consultar con un especialista para que te recomiende el tratamiento que mejor se adapte a tu tipo de piel.</li><li><strong>Pregúntate qué quieres lograr:</strong> ¿Quieres reducir las arrugas? ¿Quieres mejorar la textura de la piel? ¿Quieres tensar la piel? Una vez que sepas lo que quieres lograr, podrás elegir el tratamiento adecuado.</li><li><strong>Investiga los diferentes tratamientos:</strong> Hay muchos tratamientos faciales disponibles, cada uno con sus propios beneficios y riesgos. Haz tu investigación para asegurarte de elegir el tratamiento que sea adecuado para ti.</li><li><strong>Consulta con un especialista:</strong> La mejor manera de elegir el tratamiento facial adecuado es consultar con un especialista en medicina estética. El especialista te ayudará a evaluar tus necesidades y a elegir el tratamiento que mejor se adapte a ti.</li></ul><p><br></p><p>En DIVUM, ofrecemos una amplia gama de tratamientos. Nuestros especialistas te ayudarán a elegir el tratamiento adecuado para ti y a obtener los mejores resultados.</p><p><br></p><p>¿Quieres saber más sobre nuestros tratamientos faciales? Contáctanos  para obtener más información.</p><p><br></p>', 'tratamientos-faciales-para-rejuvenecer-tu-piel--una-gu--a-completa.png', 'tratamientos-faciales-para-rejuvenecer-tu-piel-una-gua-completa', 'DIVUM', '2023-10-23 19:04:00', 1),
+(2, 'La importancia de la higiene bucal para tu salud y bienestar', 'La higiene bucal es una parte fundamental de la salud general. Una buena higiene bucal ayuda a prevenir problemas dentales, como caries, enfermedades de las encías y mal aliento. También puede ayudar a mejorar la apariencia de tu sonrisa y la confianza en ti mismo.', '<h4><strong>¿Por qué es importante la higiene bucal?</strong></h4><p>La boca es un ecosistema complejo que alberga bacterias, virus y hongos. Estas bacterias pueden causar problemas dentales si no se eliminan de forma regular.</p><p>Una buena higiene bucal ayuda a eliminar estas bacterias y prevenir problemas dentales, como:</p><ul><li><strong>Caries:</strong> Las caries son agujeros en los dientes que pueden causar dolor y sensibilidad.</li><li><strong>Enfermedades de las encías:</strong> Las enfermedades de las encías son una infección que puede dañar las encías y los huesos que sostienen los dientes.</li><li><strong>Mal aliento:</strong> El mal aliento, también conocido como halitosis, es causado por bacterias en la boca.</li></ul><p><br></p><h4><strong>¿Cómo practicar una buena higiene bucal?</strong></h4><p>Para practicar una buena higiene bucal, es importante cepillarse los dientes dos veces al día durante dos minutos cada vez. También es importante usar hilo dental una vez al día para eliminar la placa y los restos de comida de entre los dientes.</p><p>Además del cepillado y el uso del hilo dental, es importante visitar al dentista regularmente para realizar limpiezas y controles dentales.</p><p><br></p><h4><strong>Consejos para una buena higiene bucal:</strong></h4><ul><li><strong>Use una pasta dental con flúor.</strong> El flúor ayuda a fortalecer los dientes y prevenir las caries.</li><li><strong>Cepille los dientes en círculos.</strong> Esto ayudará a eliminar la placa y los restos de comida de todas las superficies de los dientes.</li><li><strong>Use hilo dental una vez al día.</strong> El hilo dental ayuda a eliminar la placa y los restos de comida de entre los dientes, donde el cepillo no puede llegar.</li><li><strong>Visite al dentista regularmente para realizar limpiezas y controles dentales.</strong> El dentista puede eliminar la placa y el sarro acumulados, que pueden causar problemas dentales.</li></ul><h4><br></h4><p>La higiene bucal es una parte importante de la salud general. Practicando una buena higiene bucal, puedes ayudar a prevenir problemas dentales y mantener una sonrisa sana y hermosa.</p><p><br></p><h4><strong><em>¿Quieres saber más sobre cómo mejorar tu higiene bucal? Programa una cita con nosotros hoy mismo.</em></strong></h4><p><br></p>', 'la-importancia-de-la-higiene-bucal-para-tu-salud-y-bienestar.png', 'la-importancia-de-la-higiene-bucal-para-tu-salud-y-bienestar', 'DIVUM', '2023-10-24 06:11:35', 1),
+(3, 'Tratamientos faciales para rejuvenecer tu piel en México: una guía completa', 'Con el paso del tiempo, la piel del rostro va perdiendo su elasticidad y firmeza, lo que se traduce en la aparición de arrugas, flacidez y manchas. Sin embargo, existen una serie de tratamientos faciales que pueden ayudar a retrasar los signos del envejecimiento y recuperar un aspecto más joven y saludable.', '<p>En esta guía, te contamos cuáles son los tratamientos faciales más efectivos para rejuvenecer la piel en México. Además, te damos consejos para elegir el tratamiento más adecuado para ti.</p><p><br></p><h4><strong>Los tipos de tratamientos faciales para rejuvenecer la piel</strong></h4><p>Los tratamientos faciales para rejuvenecer la piel se pueden clasificar en dos categorías principales:</p><ul><li><a href=\"http://belleza.divumclinic.com/servicios\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Tratamientos no invasivos</strong></a><strong>:</strong> Estos tratamientos no requieren cirugía ni incisiones. Se realizan en la consulta del médico o en un centro de estética y sus resultados son temporales. Algunos ejemplos de tratamientos no invasivos para rejuvenecer la piel son:</li><li class=\"ql-indent-1\"><strong>Rellenos faciales:</strong> Estos tratamientos se utilizan para rellenar las arrugas y líneas de expresión. Los rellenos más comunes son los de ácido hialurónico, que son biodegradables y se absorben por el cuerpo con el tiempo.</li><li class=\"ql-indent-1\"><strong>Toxina botulínica:</strong> Este tratamiento se utiliza para relajar los músculos faciales que causan las arrugas de expresión. Los resultados de la toxina botulínica suelen durar entre 4 y 6 meses.</li><li class=\"ql-indent-1\"><strong>Peelings químicos:</strong> Estos tratamientos se utilizan para eliminar las capas superficiales de la piel y mejorar su textura y luminosidad.</li><li class=\"ql-indent-1\"><strong>Radiofrecuencia facial:</strong> Este tratamiento estimula la producción de colágeno y elastina, lo que ayuda a tensar la piel y reducir las arrugas.</li><li class=\"ql-indent-1\"><strong>Hilos tensores:</strong> Estos tratamientos se utilizan para tensar la piel mediante la inserción de hilos finos en las capas profundas de la piel.</li><li><strong>Tratamientos invasivos:</strong> Estos tratamientos requieren cirugía o incisiones. Se realizan en un hospital o clínica especializada y sus resultados son duraderos. Algunos ejemplos de tratamientos invasivos para rejuvenecer la piel son:</li><li class=\"ql-indent-1\"><strong>Lifting facial:</strong> Este tratamiento se utiliza para tensar la piel y eliminar la flacidez del rostro.</li><li class=\"ql-indent-1\"><strong>Blefaroplastia:</strong> Este tratamiento se utiliza para corregir los párpados caídos.</li><li class=\"ql-indent-1\"><strong>Rejuvenecimiento con láser:</strong> Este tratamiento se utiliza para eliminar manchas, arrugas y cicatrices.</li></ul><p><br></p><h4><strong>Cómo elegir el tratamiento facial adecuado</strong></h4><p>El mejor tratamiento facial para rejuvenecer la piel dependerá de las necesidades y objetivos de cada persona. Por eso, es importante consultar con un médico o especialista en estética para que te asesore sobre el tratamiento más adecuado para ti.</p><p>A continuación, te damos algunos consejos para elegir el tratamiento facial adecuado:</p><ul><li><strong>Evalúa tus necesidades:</strong> ¿Qué es lo que te preocupa de tu piel? ¿Quieres eliminar arrugas, mejorar la textura de la piel o corregir la flacidez?</li><li><strong>Considera tus objetivos:</strong> ¿Qué resultados esperas obtener? ¿Quieres un efecto inmediato o duradero?</li><li><a href=\"http://belleza.divumclinic.com/contacto\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Consulta con un profesional</strong></a><strong>:</strong> Un médico o especialista en estética podrá asesorarte sobre el tratamiento más adecuado para ti.</li></ul><p><br></p><p>Los tratamientos faciales para rejuvenecer la piel son una excelente opción para retrasar los signos del envejecimiento y recuperar un aspecto más joven y saludable. Sin embargo, es importante elegir el tratamiento adecuado para ti y consultar con un profesional antes de realizar cualquier tratamiento.</p>', 'tratamientos-faciales-para-rejuvenecer-tu-piel-en-m--xico--una-gu--a-completa.png', 'tratamientos-faciales-para-rejuvenecer-tu-piel-en-mxico-una-gua-completa', 'DIVUM', '2023-10-25 15:32:55', 1),
+(4, 'Consejos para una higiene bucal perfecta', 'Una sonrisa sana y brillante es una de las mejores tarjetas de presentación que podemos tener. Sin embargo, para mantenerla así, es necesario seguir una rutina de higiene bucal adecuada.', '<h4>En esta entrada del blog, te daremos algunos consejos para que puedas tener una higiene bucal perfecta.</h4><p><br></p><p><strong>1. Cepíllese los dientes dos veces al día durante dos minutos cada vez.</strong></p><p>Este es el consejo más importante para una buena higiene bucal. El cepillado elimina la placa bacteriana, que es la principal causa de caries y enfermedades de las encías.</p><p>Al cepillarse los dientes, use una pasta dental con flúor. El flúor ayuda a fortalecer los dientes y prevenir las caries.</p><p><strong>2. Use hilo dental una vez al día.</strong></p><p>El hilo dental es esencial para eliminar la placa y los restos de comida de entre los dientes, donde el cepillo no puede llegar.</p><p><strong>3. Use un enjuague bucal.</strong></p><p>Un enjuague bucal puede ayudar a eliminar las bacterias y refrescar el aliento.</p><p><strong>4. </strong><a href=\"https://divumclinic.com/contacto\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Visite al dentista regularmente</strong></a><strong>.</strong></p><p>Las limpiezas dentales profesionales pueden eliminar la placa y el sarro acumulados, que pueden causar problemas dentales.</p><p><strong>Consejos adicionales:</strong></p><ul><li>Use un cepillo de dientes de cerdas suaves.</li><li>Reemplace su cepillo de dientes cada tres meses.</li><li>Use una pasta dental con flúor.</li><li>Cepíllese los dientes en círculos, prestando especial atención a las superficies internas y externas de los dientes.</li><li>Use hilo dental una vez al día, antes de acostarse.</li><li>Use un enjuague bucal.</li><li>Visite al dentista regularmente para realizar limpiezas y controles dentales.</li></ul><p><strong><br></strong></p><p>Siguiendo estos consejos, puede mantener una higiene bucal perfecta y disfrutar de una sonrisa sana y brillante.</p>', 'consejos-para-una-higiene-bucal-perfecta.png', 'consejos-para-una-higiene-bucal-perfecta', 'DIVUM', '2023-10-26 20:48:12', 1),
+(5, 'Los beneficios de la toxina botulínica para rejuvenecer la piel', 'La toxina botulínica, también conocida como botox, es un tratamiento estético no invasivo que se utiliza para eliminar o suavizar las arrugas de expresión. Este tratamiento funciona al bloquear la señal nerviosa que envía el cerebro a los músculos faciales, lo que hace que estos se relajen y las arrugas desaparezcan o se reduzcan.', '<h4><strong>¿Cuáles son los beneficios de la toxina botulínica?</strong></h4><p>La toxina botulínica tiene una serie de beneficios para rejuvenecer la piel, entre los que se encuentran:</p><ul><li><strong>Elimina o suaviza las arrugas de expresión:</strong> Las arrugas de expresión son las que se forman en el rostro cuando se realizan movimientos faciales repetitivos, como fruncir el ceño, levantar la ceja o sonreír. La toxina botulínica es muy efectiva para eliminar o suavizar estas arrugas.</li><li><strong>Mejora la apariencia del rostro:</strong> La toxina botulínica puede ayudar a mejorar la apariencia del rostro, haciendo que se vea más relajado y joven.</li><li><strong>Es un tratamiento seguro y eficaz:</strong> La toxina botulínica es un tratamiento seguro y eficaz que ha sido aprobado por la FDA (Administración de Alimentos y Medicamentos de los Estados Unidos).</li></ul><p><br></p><h4><strong>¿Cuáles son las indicaciones de la toxina botulínica?</strong></h4><p>La toxina botulínica está indicada para el tratamiento de las siguientes arrugas de expresión:</p><ul><li><strong>Arrugas de la frente:</strong> Las arrugas de la frente son las que se forman en el centro de la frente cuando se frunce el ceño.</li><li><strong>Arrugas del entrecejo:</strong> Las arrugas del entrecejo son las que se forman entre las cejas cuando se frunce el ceño.</li><li><strong>Arrugas patas de gallo:</strong> Las arrugas patas de gallo son las que se forman en los extremos de los ojos cuando se sonríe o se ríe.</li><li><strong>Arrugas alrededor de la boca:</strong> Las arrugas alrededor de la boca son las que se forman cuando se sonríe o se ríe.</li></ul><p><br></p><h4><strong>¿Cuáles son los efectos secundarios de la toxina botulínica?</strong></h4><p>Los efectos secundarios de la toxina botulínica son leves y suelen desaparecer en unos pocos días. Los efectos secundarios más comunes son:</p><ul><li><strong>Hinchazón y enrojecimiento en el lugar de la inyección:</strong> Estos efectos secundarios suelen desaparecer en unas pocas horas.</li><li><strong>Dolor de cabeza:</strong> El dolor de cabeza es un efecto secundario poco frecuente.</li><li><strong>Baja intensidad de los músculos faciales:</strong> En casos muy raros, la toxina botulínica puede provocar una baja intensidad de los músculos faciales.</li></ul><p><br></p><h4><strong>¿Cómo se aplica la toxina botulínica?</strong></h4><p>La toxina botulínica se aplica mediante inyecciones en los músculos faciales. El procedimiento se realiza en la consulta del médico o del especialista en estética y es relativamente sencillo y rápido.</p><p><br></p><h4><strong>¿Cuánto dura el efecto de la toxina botulínica?</strong></h4><p>El efecto de la toxina botulínica suele durar entre 4 y 6 meses.</p><p><br></p><h4><strong>¿Es necesario realizar un mantenimiento del tratamiento?</strong></h4><p>Sí, es necesario realizar un mantenimiento del tratamiento cada 4 o 6 meses para prolongar los resultados.</p><p><strong><br></strong></p><p>La toxina botulínica es un tratamiento estético eficaz y seguro que puede ayudar a eliminar o suavizar las arrugas de expresión. Si estás pensando en realizarte este tratamiento, es importante que consultes con un médico o especialista en estética para que te asesore sobre la idoneidad del tratamiento para ti.</p>', 'los-beneficios-de-la-toxina-botul--nica-para-rejuvenecer-la-piel.png', 'los-beneficios-de-la-toxina-botulnica-para-rejuvenecer-la-piel', 'DIVUM', '2023-10-27 17:59:52', 1),
+(6, '¿Cómo elegir el cepillo de dientes adecuado?', 'El cepillo de dientes es una herramienta esencial para la higiene bucal. Sin embargo, no todos los cepillos de dientes son iguales. Elegir el cepillo de dientes adecuado es importante para mantener una buena salud bucal.', '<h4>En esta entrada del blog, te daremos algunos consejos para elegir el cepillo de dientes adecuado.</h4><p><br></p><p><strong>1. Tamaño de la cabeza del cepillo:</strong></p><p>La cabeza del cepillo debe ser del tamaño adecuado para que puedas llegar a todos los dientes de tu boca. Una cabeza demasiado grande puede ser difícil de usar y no te permitirá llegar a todos los rincones.</p><p><strong>2. Dureza de las cerdas:</strong></p><p>Las cerdas de los cepillos de dientes vienen en diferentes durezas. Las cerdas suaves son las mejores para la mayoría de las personas. Las cerdas duras pueden dañar las encías.</p><p><strong>3. Mango del cepillo:</strong></p><p>El mango del cepillo debe ser cómodo de sostener. Un mango con un agarre antideslizante te ayudará a cepillarte los dientes con seguridad.</p><p><strong>4. Tipo de cepillo:</strong></p><p>Hay dos tipos principales de cepillos de dientes: manuales y eléctricos. Los cepillos de dientes manuales son más económicos y fáciles de encontrar. Los cepillos de dientes eléctricos pueden ser más eficaces para eliminar la placa y los restos de comida.</p><p><strong>Consejos adicionales:</strong></p><ul><li>Reemplace su cepillo de dientes cada tres meses.</li><li>Use una pasta dental con flúor.</li><li>Cepíllese los dientes dos veces al día durante dos minutos cada vez.</li><li>Use hilo dental una vez al día.</li><li><a href=\"https://divumclinic.com/contacto\" rel=\"noopener noreferrer\" target=\"_blank\">Visite al dentista regularmente</a> para realizar limpiezas y controles dentales.</li></ul><p><strong><br></strong></p><p>Elegir el cepillo de dientes adecuado es importante para mantener una buena salud bucal. Siguiendo estos consejos, puedes elegir el cepillo de dientes perfecto para ti.</p>', '--c--mo-elegir-el-cepillo-de-dientes-adecuado-.png', 'cmo-elegir-el-cepillo-de-dientes-adecuado', 'DIVUM', '2023-10-30 07:19:59', 0);
 
 -- --------------------------------------------------------
 
@@ -238,7 +225,12 @@ CREATE TABLE `post_category` (
 --
 
 INSERT INTO `post_category` (`id_post`, `id_category`) VALUES
-(21, 9);
+(1, 9),
+(2, 2),
+(3, 10),
+(4, 7),
+(5, 14),
+(6, 1);
 
 -- --------------------------------------------------------
 
@@ -251,6 +243,66 @@ CREATE TABLE `post_usuario` (
   `id_usuario` int(11) NOT NULL,
   `id_post` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `post_usuario`
+--
+
+INSERT INTO `post_usuario` (`id_postUsuario`, `id_usuario`, `id_post`) VALUES
+(3, 1, 1),
+(4, 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `roulette_options`
+--
+
+CREATE TABLE `roulette_options` (
+  `id_option` int(11) NOT NULL,
+  `option_text` varchar(255) NOT NULL,
+  `option_style` json DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `roulette_options`
+--
+
+INSERT INTO `roulette_options` (`id_option`, `option_text`, `option_style`, `status`) VALUES
+(1, '10% OFF FACIAL', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 1),
+(2, 'GRATIS MIRADA HOLLYWOOD', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1),
+(3, '5% OFF MICRONEEDLING', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 0),
+(4, 'GRATIS MICROBLADING', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1),
+(5, '10% OFF PEELING', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 1),
+(6, 'GRATIS PULIDO ROSTRO', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1),
+(7, '15% OFF HIDRATACIÓN DE PIEL', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 1),
+(8, '25% OFF MANCHAS DE PIEL', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1),
+(9, 'GRATIS CONSULTA VALORACIÓN RINOPLASTIA', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 0),
+(10, 'GRATIS CONSULTA VALORACIÓN RINOPLASTIA', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1),
+(11, 'GRATIS CONSULTA VALORACIÓN RINOPLASTIA', '{\"fontSize\": 15, \"textColor\": \"white\", \"fontWeight\": 10, \"backgroundColor\": \"#005682\"}', 1),
+(12, 'GRATIS CONSULTA VALORACIÓN RINOPLASTIA', '{\"fontSize\": 15, \"textColor\": \"black\", \"fontWeight\": 10, \"backgroundColor\": \"#FFFFFF\"}', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `roulette_user`
+--
+
+CREATE TABLE `roulette_user` (
+  `id_roulette_user` int(11) NOT NULL,
+  `id_option` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `confirmation_code` varchar(550) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `roulette_user`
+--
+
+INSERT INTO `roulette_user` (`id_roulette_user`, `id_option`, `id_usuario`, `confirmation_code`) VALUES
+(2, 9, 1, '7uPTEwsM5BkKMIU2n9-1'),
+(4, 3, 3, 'qdBEKBmQ1sd3xkk3ye-3');
 
 -- --------------------------------------------------------
 
@@ -296,8 +348,19 @@ CREATE TABLE `usuario` (
   `titulo` varchar(255) DEFAULT NULL,
   `fotoPerfil` varchar(255) DEFAULT 'imgPerfilPredeterminado.jpg',
   `descripcionPersonal` varchar(500) DEFAULT NULL,
-  `fechaRegistro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `tipo` varchar(255) NOT NULL DEFAULT 'usuario',
+  `fechaRegistro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `nombre`, `titulo`, `fotoPerfil`, `descripcionPersonal`, `tipo`, `fechaRegistro`, `status`) VALUES
+(1, 'JUAN OMAR CAMACHO GIL', 'INGE EN SISTEMAS', 'imgPerfilPredeterminado.jpg', 'SOY EL DESARROLLADOR', 'admin', '2023-10-04 00:57:17', 0),
+(2, 'DIVUM', 'ADMIN', 'imgPerfilPredeterminado.jpg', 'ADMIN', 'admin', '2023-10-24 06:08:26', 0),
+(3, 'JUAN GIL', 'Ninguno', 'imgPerfilPredeterminado.jpg', 'JUEGO DE RULETA', 'usuario', '2023-10-28 07:21:17', 1);
 
 -- --------------------------------------------------------
 
@@ -312,6 +375,14 @@ CREATE TABLE `usuarios_login` (
   `password` varchar(255) NOT NULL,
   `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios_login`
+--
+
+INSERT INTO `usuarios_login` (`id_usuarioLogin`, `id_usuario`, `correo`, `password`, `last_login`) VALUES
+(1, 1, 'juanomarcamacho@gmail.com', '$2y$10$0wKRwBy/nNKzemlNxGhQqO5Xkm2UTAQlf9fk2K8dJ/O1Mdnd/GsD6', '2023-10-04 00:57:17'),
+(2, 3, 'omar@yopmail.com', '$2y$10$7WyOW14ou/qV8XBYFKGYPeKqKp10M6pLhQcLrqP598xNTwWmeUbH6', '2023-10-28 07:21:17');
 
 --
 -- Índices para tablas volcadas
@@ -364,6 +435,20 @@ ALTER TABLE `post_usuario`
   ADD KEY `id_post` (`id_post`);
 
 --
+-- Indices de la tabla `roulette_options`
+--
+ALTER TABLE `roulette_options`
+  ADD PRIMARY KEY (`id_option`);
+
+--
+-- Indices de la tabla `roulette_user`
+--
+ALTER TABLE `roulette_user`
+  ADD PRIMARY KEY (`id_roulette_user`),
+  ADD KEY `id_option` (`id_option`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
 -- Indices de la tabla `treatments`
 --
 ALTER TABLE `treatments`
@@ -414,13 +499,25 @@ ALTER TABLE `contact_form`
 -- AUTO_INCREMENT de la tabla `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `post_usuario`
 --
 ALTER TABLE `post_usuario`
-  MODIFY `id_postUsuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_postUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT de la tabla `roulette_options`
+--
+ALTER TABLE `roulette_options`
+  MODIFY `id_option` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT de la tabla `roulette_user`
+--
+ALTER TABLE `roulette_user`
+  MODIFY `id_roulette_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `treatments`
@@ -432,13 +529,13 @@ ALTER TABLE `treatments`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios_login`
 --
 ALTER TABLE `usuarios_login`
-  MODIFY `id_usuarioLogin` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuarioLogin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
@@ -465,12 +562,15 @@ ALTER TABLE `post_usuario`
   ADD CONSTRAINT `post_usuario_ibfk_2` FOREIGN KEY (`id_post`) REFERENCES `posts` (`id_post`);
 
 --
+-- Filtros para la tabla `roulette_user`
+--
+ALTER TABLE `roulette_user`
+  ADD CONSTRAINT `roulette_user_ibfk_1` FOREIGN KEY (`id_option`) REFERENCES `roulette_options` (`id_option`),
+  ADD CONSTRAINT `roulette_user_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
+
+--
 -- Filtros para la tabla `usuarios_login`
 --
 ALTER TABLE `usuarios_login`
   ADD CONSTRAINT `usuarios_login_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
