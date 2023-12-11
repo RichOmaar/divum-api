@@ -8,7 +8,8 @@ class Roulette
         $conn = new Connection();
         $db = $conn->get_connection();
 
-        $sql = "SELECT option_text AS 'option', option_style AS 'style' FROM roulette_options WHERE status = 1;";
+        // $sql = "SELECT * FROM roulette_options WHERE status = 1";
+        $sql = "SELECT * FROM roulette_options";
 
         $stmt = $db->prepare($sql);
 
